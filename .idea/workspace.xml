@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb876dd-61ee-4113-a1bf-f8f8abef16c1" name="Default Changelist" comment="" />
+    <list default="true" id="4fb876dd-61ee-4113-a1bf-f8f8abef16c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JuniorEducationPlanMatrices/matrices/task11/Task11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/matrices/task11/Task11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JuniorEducationPlanMatrices/matrices/task10/Task10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JuniorEducationPlanMatrices/matrices/task10/Task10.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,38 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matrices/task9/Task9.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matrices/task8/Task8.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="9" selection-start-line="7" selection-start-column="8" selection-end-line="49" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/matrices/task10/Task10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matrices/task4/Task4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -55,6 +34,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,6 +51,7 @@
         <option value="$PROJECT_DIR$/src/matrices/task8/Task8.java" />
         <option value="$PROJECT_DIR$/src/matrices/task9/Task9.java" />
         <option value="$PROJECT_DIR$/src/matrices/task10/Task10.java" />
+        <option value="$PROJECT_DIR$/src/matrices/task11/Task11.java" />
       </list>
     </option>
   </component>
@@ -83,7 +66,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,16 +73,42 @@
               <item name="JuniorEducationPlanMatrices" type="b2602c69:ProjectViewProjectNode" />
               <item name="JuniorEducationPlanMatrices" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JuniorEducationPlanMatrices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JuniorEducationPlanMatrices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JuniorEducationPlanMatrices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JuniorEducationPlanMatrices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="matrices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JuniorEducationPlanMatrices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JuniorEducationPlanMatrices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="matrices" type="462c0819:PsiDirectoryNode" />
+              <item name="task10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JuniorEducationPlanMatrices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JuniorEducationPlanMatrices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="matrices" type="462c0819:PsiDirectoryNode" />
+              <item name="task11" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553256354466" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JuniorEducationPlanCalculations" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553538339967" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -133,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="matrices.task6.Task6" />
+    <configuration name="Task11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="matrices.task11.Task11" />
       <module name="JuniorEducationPlanMatrices" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="matrices.task6.*" />
+          <option name="PATTERN" value="matrices.task11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,10 +196,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Task10" />
+        <item itemvalue="Application.Task11" />
         <item itemvalue="Application.Task9" />
         <item itemvalue="Application.Task8" />
         <item itemvalue="Application.Task7" />
-        <item itemvalue="Application.Task6" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +219,7 @@
   <component name="ToolWindowManager">
     <frame x="59" y="25" width="1861" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2523416" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25785124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -220,7 +228,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -290,13 +298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrices/task8/Task8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="9" selection-start-line="7" selection-start-column="8" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrices/task4/Task4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -304,10 +305,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/matrices/task11/Task11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matrices/task8/Task8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="9" selection-start-line="7" selection-start-column="8" selection-end-line="49" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrices/task10/Task10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="345">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
         </state>
       </provider>
     </entry>
