@@ -1,50 +1,33 @@
+/**
+ * Дана матрица размера m x n. Вывести ее элементы в следующем порядке: первая строка справа налево,
+ * вторая строка слева направо, третья строка справа налево и так далее.
+ */
+
 package matrices.task11;
 
-import java.util.Scanner;
+import matrices.Matrix;
 
-public class Task11 {
+public class Task11 extends Matrix {
     public static void main(String[] args) {
-
-        Scanner in = new Scanner(System.in);
-
         try {
-            System.out.println("Enter row length");
-            int rowLength = in.nextInt();
-            System.out.println("Enter column length");
-            int columnLength = in.nextInt();
-
-            int[][] arr = new int[rowLength][columnLength];
-
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    arr[i][j] = (int) (Math.random() * 10);
-                }
-            }
+            int[][] matrix = fillMatrix();
 
             System.out.println("Matrix\n");
 
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    System.out.print(arr[i][j] + "\t");
-                }
-                System.out.println();
-            }
+            displayMatrix(matrix);
             System.out.println();
 
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[i].length; j++) {
                     if (i % 2 == 0) {
-                        System.out.print(arr[i][arr[i].length - 1 - j] + "\t");
+                        System.out.print(matrix[i][matrix[i].length - 1 - j] + "\t");
                     } else {
-                        System.out.print(arr[i][j] + "\t");
+                        System.out.print(matrix[i][j] + "\t");
                     }
 
                 }
                 System.out.println();
             }
-
-
-
         } catch (java.util.InputMismatchException e) {
             System.out.println("Not correct array length");
         }

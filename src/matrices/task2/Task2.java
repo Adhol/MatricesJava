@@ -1,33 +1,17 @@
+/**
+ * Создать и вывести на экран матрицу 2 x 3, заполненную случайными числами из [0, 9].
+ */
+
 package matrices.task2;
 
-import java.util.Scanner;
+import matrices.Matrix;
 
-public class Task2 {
+public class Task2 extends Matrix {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-
         try {
-            System.out.println("Enter row length");
-            int rowLength = in.nextInt();
-            System.out.println("Enter column length");
-            int columnLength = in.nextInt();
-
-            int[][] arr = new int[rowLength][columnLength];
-
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    arr[i][j] = (int) (Math.random() * 10);
-                }
-            }
-
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    System.out.print(arr[i][j] + "\t");
-                }
-                System.out.println();
-            }
-
+            int[][] arr = fillMatrix();
+            displayMatrix(arr);
         } catch (java.util.InputMismatchException e) {
             System.out.println("Not correct array length");
         }

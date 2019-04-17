@@ -1,34 +1,24 @@
+/**
+ * Дана матрица. Вывести k-ю строку и p-й столбец матрицы.
+ */
+
 package matrices.task10;
+
+import matrices.Matrix;
 
 import java.util.Scanner;
 
-public class Task10 {
+public class Task10 extends Matrix {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
 
         try {
-            System.out.println("Enter row length");
-            int rowLength = in.nextInt();
-            System.out.println("Enter column length");
-            int columnLength = in.nextInt();
-
-            int[][] arr = new int[rowLength][columnLength];
-
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    arr[i][j] = (int) (Math.random() * 10);
-                }
-            }
+            int[][] matrix = fillMatrix();
 
             System.out.println("Matrix\n");
 
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    System.out.print(arr[i][j] + "\t");
-                }
-                System.out.println();
-            }
+            displayMatrix(matrix);
             System.out.println();
 
             System.out.println("row for display");
@@ -39,24 +29,15 @@ public class Task10 {
             System.out.println();
             System.out.println("row\n");
 
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    if (i == row - 1) {
-                        System.out.print(arr[i][j] + "\t");
-                    }
-                }
+            for (int i = 0; i < matrix[0].length; i++) {
+                System.out.print(matrix[row - 1][i] + "\t");
             }
 
             System.out.println("\n");
             System.out.println("column");
 
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    if (j == column - 1) {
-                        System.out.print(arr[i][j] + "\t");
-                    }
-                }
-                System.out.println();
+            for (int i = 0; i < matrix.length; i++) {
+                System.out.println(matrix[i][column - 1]);
             }
 
         } catch (java.util.InputMismatchException e) {

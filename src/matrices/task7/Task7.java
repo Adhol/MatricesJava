@@ -1,43 +1,30 @@
+/**
+ * Дан двухмерный массив 5×5. Найти сумму модулей отрицательных нечетных элементов.
+ */
+
 package matrices.task7;
 
-import java.util.Scanner;
+import matrices.Matrix;
 
-public class Task7 {
+public class Task7 extends Matrix {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-
         try {
-            System.out.println("Enter row length");
-            int rowLength = in.nextInt();
-            System.out.println("Enter column length");
-            int columnLength = in.nextInt();
 
-            int[][] arr = new int[rowLength][columnLength];
-
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    arr[i][j] = (int) (-5 + Math.random() * 10);
-                }
-            }
+            int[][] matrix = fillMatrix();
 
             System.out.println("Matrix\n");
 
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    System.out.print(arr[i][j] + "\t");
-                }
-                System.out.println();
-            }
-            System.out.println();
+            displayMatrix(matrix);
+
             System.out.println("sum of abs negative is:");
 
             int sum = 0;
 
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    if (arr[i][j] < 0) {
-                        sum+=Math.abs(arr[i][j]);
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[i].length; j++) {
+                    if (matrix[i][j] < 0) {
+                        sum+=Math.abs(matrix[i][j]);
                     }
                 }
             }

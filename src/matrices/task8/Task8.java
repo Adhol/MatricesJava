@@ -1,44 +1,32 @@
+/**
+ * Дан двухмерный массив n×m элементов. Определить, сколько раз встречается число 7 среди элементов массива.
+ */
+
 package matrices.task8;
 
-import java.util.Scanner;
+import matrices.Matrix;
 
-public class Task8 {
+public class Task8 extends Matrix {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-
         try {
-            System.out.println("Enter row length");
-            int rowLength = in.nextInt();
-            System.out.println("Enter column length");
-            int columnLength = in.nextInt();
-            System.out.println("number to check the number of entries in the matrix, from 0 to 9 pls");
-            int number = in.nextInt();
 
-            int[][] arr = new int[rowLength][columnLength];
-
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    arr[i][j] = (int) (Math.random() * 10);
-                }
-            }
+            int[][] matrix = fillMatrix();
 
             System.out.println("Matrix\n");
 
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    System.out.print(arr[i][j] + "\t");
-                }
-                System.out.println();
-            }
+            displayMatrix(matrix);
+
             System.out.println();
-            System.out.println("number of entries is:");
 
+            int number = 7;
             int counter = 0;
+            System.out.println(number + " of entries is:");
 
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    if (arr[i][j] == number) {
+
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[i].length; j++) {
+                    if (matrix[i][j] == number) {
                         counter++;
                     }
                 }

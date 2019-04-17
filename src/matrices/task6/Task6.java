@@ -1,44 +1,28 @@
+/**
+ * Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего.
+ */
+
 package matrices.task6;
 
-import java.util.Scanner;
+import matrices.Matrix;
 
-public class Task6 {
+public class Task6 extends Matrix {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-
         try {
-            System.out.println("Enter row length");
-            int rowLength = in.nextInt();
-            System.out.println("Enter column length");
-            int columnLength = in.nextInt();
-
-            int[][] arr = new int[rowLength][columnLength];
-
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    arr[i][j] = (int) (Math.random() * 10);
-                }
-            }
+            int[][] matrix = fillMatrix();
 
             System.out.println("Matrix\n");
 
-            for (int i = 0; i < arr.length; i ++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    System.out.print(arr[i][j] + "\t");
-                }
-                System.out.println();
-            }
+            displayMatrix(matrix);
             System.out.println();
             System.out.println("odd columns whose first element is greater than the last\n");
 
 
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    if (j % 2 == 0) {
-                        if (arr[0][j] > arr[arr.length - 1][j]) {
-                            System.out.print(arr[i][j] + "\t");
-                        }
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 1; j < matrix[0].length; j+=2) {
+                        if (matrix[0][j] > matrix[matrix.length - 1][j]) {
+                            System.out.print(matrix[i][j] + "\t");
                     }
                 }
                 System.out.println();
